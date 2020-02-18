@@ -7,13 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		63570A3623FB307900320E41 /* DomeWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63570A3523FB307900320E41 /* DomeWebView.swift */; };
 		635BBBC523FB20AE008589BE /* IntruPod.h in Headers */ = {isa = PBXBuildFile; fileRef = 635BBBC323FB20AE008589BE /* IntruPod.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		635BBBED23FB2714008589BE /* LiveTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635BBBEC23FB2714008589BE /* LiveTracker.swift */; };
+		63CC117523FC6D0B0055DF74 /* DeviceInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CC117423FC6D0B0055DF74 /* DeviceInfo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		63570A3523FB307900320E41 /* DomeWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomeWebView.swift; sourceTree = "<group>"; };
 		635BBBC023FB20AE008589BE /* IntruPod.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = IntruPod.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		635BBBC323FB20AE008589BE /* IntruPod.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IntruPod.h; sourceTree = "<group>"; };
 		635BBBC423FB20AE008589BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		635BBBEC23FB2714008589BE /* LiveTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveTracker.swift; sourceTree = "<group>"; };
+		63CC117423FC6D0B0055DF74 /* DeviceInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceInfo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,10 +52,21 @@
 		635BBBC223FB20AE008589BE /* IntruPod */ = {
 			isa = PBXGroup;
 			children = (
+				635BBBCB23FB2695008589BE /* Source */,
 				635BBBC323FB20AE008589BE /* IntruPod.h */,
 				635BBBC423FB20AE008589BE /* Info.plist */,
 			);
 			path = IntruPod;
+			sourceTree = "<group>";
+		};
+		635BBBCB23FB2695008589BE /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				635BBBEC23FB2714008589BE /* LiveTracker.swift */,
+				63570A3523FB307900320E41 /* DomeWebView.swift */,
+				63CC117423FC6D0B0055DF74 /* DeviceInfo.swift */,
+			);
+			path = Source;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -95,6 +112,7 @@
 				TargetAttributes = {
 					635BBBBF23FB20AE008589BE = {
 						CreatedOnToolsVersion = 11.3.1;
+						LastSwiftMigration = 1130;
 					};
 				};
 			};
@@ -131,6 +149,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63570A3623FB307900320E41 /* DomeWebView.swift in Sources */,
+				63CC117523FC6D0B0055DF74 /* DeviceInfo.swift in Sources */,
+				635BBBED23FB2714008589BE /* LiveTracker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +281,7 @@
 		635BBBC923FB20AE008589BE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = S7P43UR5T5;
@@ -276,6 +298,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = medder.IntruPod;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -284,6 +307,7 @@
 		635BBBCA23FB20AE008589BE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = S7P43UR5T5;

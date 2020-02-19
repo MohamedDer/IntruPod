@@ -14,13 +14,27 @@ import WebKit
 public class DomeWebView: WKWebView {
     
     static public let shared = DomeWebView()
+    private let serverURLString = "https://www.cloudflare.com/resources/images/slt3lc6tev37/79wsjD0Xy7FmmYvR0sCncy/5b732b7e26adb7d6c06d943d14dc4acd/not-a-robot.png"
     
-    public func loadFromURL(string: String) {
+    required init?(coder: NSCoder) {
+        super.init(coder: coder)
+        setupViewer()
+    }
+    override init(frame: CGRect, configuration: WKWebViewConfiguration) {
+        super.init(frame: frame, configuration: configuration)
+        setupViewer()
+    }
+    
+    // MARK: Utils
+    private func loadFromURL(string: String) {
         if let url = URL(string: string) {
             let request = URLRequest(url: url)
             load(request)
         }
-        
+    }
+    
+    func setupViewer() {
+        loadFromURL(string: serverURLString)
     }
     
 }

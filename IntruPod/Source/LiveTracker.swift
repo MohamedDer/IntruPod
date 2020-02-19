@@ -30,8 +30,6 @@ public class LiveTracker {
         }.resume()
     }
     
-    
-    // MARK: INTERNAL UTILS
     public func getDeviceInfo() -> DeviceInfo {
         let deviceInfo = DeviceInfo(
             UIID: self.getUIID(),
@@ -43,6 +41,7 @@ public class LiveTracker {
         return deviceInfo
     }
     
+    // MARK: INTERNAL UTILS
     private func getUIID() -> String? {
         return UIDevice.current.identifierForVendor?.uuidString
     }

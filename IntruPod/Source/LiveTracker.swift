@@ -11,8 +11,23 @@ import UIKit
 
 public class LiveTracker {
     
-    static public let shared = LiveTracker()
-    private let serverURLString = "https://my-secret-tracking-api.com"
+    static fileprivate var _shared: LiveTracker?
+    static var shared: LiveTracker {
+        get {
+            if let shared = _shared {
+                return shared
+            } else {
+                let shared = LiveTracker()
+                _shared = shared
+                return shared
+            }
+        }
+        set {
+            _shared = newValue
+        }
+    }
+
+    fileprivate let serverURLString = "https://my-secret-tracking-api.com"
     
     public func sendDeviceReport() {
         guard let url = URL(string: self.serverURLString) else {

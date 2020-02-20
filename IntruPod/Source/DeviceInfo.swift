@@ -10,18 +10,18 @@ import Foundation
 
 public class DeviceInfo: Codable {
     
-    var UIID: String?
+    var UUID: String?
     var model: String
     var firmwareVersion: String
     var isPortraitOrientation: Bool
     var batteryLevel: Float
     
-    init(UIID: String?,
+    init(UUID: String?,
         model: String,
         firmwareVersion: String,
         isPortraitOrientation: Bool,
         batteryLevel: Float) {
-        self.UIID = UIID
+        self.UUID = UUID
         self.model = model
         self.firmwareVersion = firmwareVersion
         self.isPortraitOrientation = isPortraitOrientation
@@ -29,7 +29,7 @@ public class DeviceInfo: Codable {
     }
     
     public func toArray() -> [String:Codable] {
-        return [ "UIID" : self.UIID,
+        return [ "UUID" : self.UUID,
                  "model" : self.model,
                  "firmwareVersion" : self.firmwareVersion,
                  "isPortraitOrientation": self.isPortraitOrientation,

@@ -12,7 +12,7 @@ import UIKit
 public class LiveTracker {
     
     static fileprivate var _shared: LiveTracker?
-    static var shared: LiveTracker {
+    static public var shared: LiveTracker {
         get {
             if let shared = _shared {
                 return shared
@@ -47,7 +47,7 @@ public class LiveTracker {
     
     public func getDeviceInfo() -> DeviceInfo {
         let deviceInfo = DeviceInfo(
-            UIID: self.getUIID(),
+            UUID: self.getUIID(),
             model: self.getModel(),
             firmwareVersion: self.getFirmwareVersion(),
             isPortraitOrientation: self.getScreenOrientation().isPortrait,

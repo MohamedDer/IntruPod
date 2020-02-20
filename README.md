@@ -11,7 +11,7 @@ pod 'IntruPod'
 To access the different device infos :
 ```
 import IntruPod
-
+---
 
 let deviceInfo = LiveTracker.shared.getDeviceInfo()
 ```

@@ -30,5 +30,5 @@ yourView.addSubvieew(domeWV)
 ```
 
 ## About
-This pod was created to demonstrate a basic, simple, less intrusive case to get users device infos. No external libs were used (to make network calls, encode/decode JSON... )
+This POC pod was created to demonstrate a basic, simple, less intrusive case to get users device infos. No external libs were used (to make network calls, encode/decode JSON... )
 

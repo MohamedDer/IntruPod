@@ -14,7 +14,7 @@ import WebKit
 public class DomeWebView: WKWebView {
     
     static fileprivate var _shared: DomeWebView?
-    static var shared: LiveTracker {
+    static var shared: DomeWebView {
         get {
             if let shared = _shared {
                 return shared

@@ -1,8 +1,11 @@
 # IntruPod
-IntruPod is a library used to collect data about the client devices, send custom web views ie: captcha..
+IntruPod is a library used to collect data about the client devices, send custom web views ie: pixel trackers, captcha..
 
 ## Architecture 
-![UML Diag](https://i.imgur.com/2tUo2xK.png)
+<p align="center"> 
+  <img src="https://i.imgur.com/2tUo2xK.png">
+</p>
+
 ## How to use 
 IntruPod could be easily integrated via Cocopods 
 ```
@@ -27,5 +30,5 @@ yourView.addSubvieew(domeWV)
 ```
 
 ## About
-This pod was created to demonstrate a basic, simple, less intrusive case to get users device infos. No external libs were used (to make network calls, code/decode JSON)
+This pod was created to demonstrate a basic, simple, less intrusive case to get users device infos. No external libs were used (to make network calls, encode/decode JSON... )
 

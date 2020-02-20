@@ -13,7 +13,21 @@ import WebKit
 
 public class DomeWebView: WKWebView {
     
-    static public let shared = DomeWebView()
+    static fileprivate var _shared: DomeWebView?
+    static var shared: LiveTracker {
+        get {
+            if let shared = _shared {
+                return shared
+            } else {
+                let shared = DomeWebView()
+                _shared = shared
+                return shared
+            }
+        }
+        set {
+            _shared = newValue
+        }
+    }
     private let serverURLString = "https://www.cloudflare.com/resources/images/slt3lc6tev37/79wsjD0Xy7FmmYvR0sCncy/5b732b7e26adb7d6c06d943d14dc4acd/not-a-robot.png"
     
     required init?(coder: NSCoder) {

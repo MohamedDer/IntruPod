@@ -21,6 +21,10 @@ let _ = LiveTracker.shared.getDeviceInfo()
 ```
 You can use the DomeWebView to send the user a webView, ie: captcha, embeded banner,... 
 By default it redirects to a captcha image, but it's fully customizable via the ``serverURLString``variable
+```
+let domeWV = DomeWebView.shared
+yourView.addSubvieew(domeWV)
+```
 
 ## About
 This pod was created to demonstrate a basic, simple, less intrusive case to get users device infos. No external libs were used (to make network calls, code/decode JSON)

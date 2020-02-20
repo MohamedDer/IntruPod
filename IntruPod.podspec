@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "IntruPod"
-  spec.version      = "0.2"
+  spec.version      = "0.2.2"
   spec.summary      = "IntruPod is a library used to collect data about the client devices"
 
   # This description is used to generate tags and improve search results.
@@ -61,7 +61,7 @@ Pod::Spec.new do |spec|
   #
 
    spec.platform     = :ios
-   spec.platform     = :ios, "11.0"
+   spec.platform     = :ios, "10.0"
 
 
   # ――― Source Location ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #

@@ -4,13 +4,14 @@ IntruPod is a library used to collect data about the client devices, send custom
 <p align="center"> 
   <img src="https://i.imgur.com/Ps1SxNY.png">
 </p>
+
 ## Architecture 
 <p align="center"> 
-  <img src="https://i.imgur.com/2tUo2xK.png">
+  <img src="https://i.imgur.com/AHE8SWi.jpg">
 </p>
 
 ## How to use 
-IntruPod could be easily integrated via Cocopods 
+IntruPod could be easily integrated via Cocaopods. Add the following line to your Podfile :  
 ```
 pod 'IntruPod'
 ```
@@ -33,5 +34,6 @@ yourView.addSubvieew(domeWV)
 ```
 
 ## About
-This POC pod was created to demonstrate a basic, simple, less intrusive case to get users device infos. No external libs were used (to make network calls, encode/decode JSON... )
+ - This POC pod was created to demonstrate a basic, simple, less intrusive case to get users device infos. No external libs were used (to make network calls, encode/decode JSON... )
+ - Server links were added just to mock the entire workflow.
 

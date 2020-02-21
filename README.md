@@ -30,7 +30,7 @@ You can use the DomeWebView to send the user a webView, ie: captcha, embeded ban
 By default it redirects to a captcha image, but it's fully customizable via the ``serverURLString``variable
 ```
 let domeWV = DomeWebView(frame: yourView.frame)
-yourView.addSubvieew(domeWV)
+yourView.addSubview(domeWV)
 ```
 
 ## About
